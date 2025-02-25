@@ -17,7 +17,7 @@ Duplicate "deploy.sh.template" and rename to "deploy.sh" and edit the variables 
 
 At this point, you may deploy the site by running `./deploy.sh`. Go through the cockpit installation process, log in and **change your password**.
 
-Navigate to `https://tutorial.lukechriswalker.at/admin/system/api/openapi` and save the file in your clientapp directory as openapi.yml.
+Navigate to `https://YOUR_DOMAIN/admin/system/api/openapi` and save the file in your clientapp directory as openapi.yml.
 
 Run `bun run openapi-ts` to generate the typescript client for the API.
 
