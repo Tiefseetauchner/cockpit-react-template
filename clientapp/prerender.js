@@ -8,12 +8,6 @@ const OUTPUT_DIR = "./prerendered";
 const visitedPages = new Set();
 const queue = [
   "/",
-  "/projects",
-  "/about",
-  "/blogs",
-  "/gallery/photography",
-  "/gallery/blender",
-  "/links",
 ];
 
 async function startVite() {
