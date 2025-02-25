@@ -11,8 +11,9 @@ RewriteCond %{REQUEST_URI} ^/admin
 RewriteRule ^(.*)$ /admin/$1 [L]
 
 # Redirect sitemap requests to sitemap.php
-RewriteCond %{REQUEST_URI} ^/sitemap.xml
-RewriteRule ^(.*)$ /sitemap.php [L]
+# Uses the SiteMapper plugin at https://github.com/Tiefseetauchner/cockpit-cms-sitemapper
+#RewriteCond %{REQUEST_URI} ^/sitemap.xml
+#RewriteRule ^(.*)$ /sitemap.php [L]
 
 # Detect bots and serve prerendered content if available
 RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|yandex|baiduspider|duckduckbot|slurp|facebot|facebookexternalhit|twitterbot|discordbot|linkedinbot|telegrambot|whatsapp|slackbot|applebot|semrushbot|ahrefsbot|mj12bot|seznambot|gptbot|coccocbot|sogou) [NC]
