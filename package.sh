@@ -49,7 +49,7 @@ mkdir build
 if [ "$UPLOAD_CLIENTAPP" == "YES" ]; then
   cd clientapp
   bun run build
-  bun prerender.js
+  # bun prerender.js
   cd ..
 fi
 
@@ -60,7 +60,7 @@ fi
 
 if [ "$UPLOAD_CLIENTAPP" == "YES" ]; then
   cp -r clientapp/dist/* build/
-  cp -r clientapp/prerendered/ build/
+  # cp -r clientapp/prerendered/ build/
 fi
 
 if [ "$UPLOAD_ADMIN" == "YES" ]; then
